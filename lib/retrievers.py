@@ -38,7 +38,7 @@ def bike_specs(search_query: str) -> str:
 
 def chicho_response() -> str:
     """ Returns a 'Como Dios Manda' response """
-    search_query = "{}".format("chico lorenzo como dios manda")
+    search_query = "{}".format("chicho lorenzo como dios manda")
     request_url = "https://www.googleapis.com/customsearch/v1?cx={cx}&key={key}&searchType=image&q={query_text}".format(cx=GOOGLE_CX, key=GOOGLE_SEARCH_KEY, query_text=search_query)
     return search(request_url)
 
